@@ -1,4 +1,4 @@
-import {defineComponent, inject, provide, Ref, ref} from "vue";
+import {defineComponent, inject, provide, type Ref, ref} from "vue";
 import {CartModel} from "@/models/CartModel";
 import CustomInput from "@/components/CustomInput";
 import {ItemModel} from "@/models/ItemModel";

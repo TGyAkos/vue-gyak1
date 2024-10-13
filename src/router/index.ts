@@ -1,6 +1,5 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Home from "@/views/Home.vue";
 import {TsxCart} from "@/views/Cart.tsx";
 
 ;
@@ -30,6 +29,16 @@ const router = createRouter({
             path: '/cart',
             name: 'cart',
             component: TsxCart
+        },
+        {
+            path: '/counter',
+            name: 'counter',
+            component: () => import('@/views/CounterView.vue')
+        },
+        {
+            path: '/userList',
+            name: 'userList',
+            component: () => import('@/views/UserView.vue')
         }
     ]
 })

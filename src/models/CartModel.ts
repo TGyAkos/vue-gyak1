@@ -26,7 +26,7 @@ export class CartModel {
         this.currentTotal -= item.price
     }
 
-    convertToObject(item): ItemModel {
+    convertToObject(item: any): ItemModel {
         return Object.assign(new ItemModel(), JSON.parse(JSON.stringify(item.value))) as ItemModel
     }
 }
