@@ -15,8 +15,11 @@ const userList: UserListModel = inject("userList")
     <AnotherCustomInput v-model:attribute="currentUser.email" type="text">Email</AnotherCustomInput>
     <AnotherCustomInput v-model:attribute="currentUser.phoneNumber as number" type="number">Phone number
     </AnotherCustomInput>
+    <AnotherCustomInput v-model:attribute="currentUser.age as number" type="number">Age</AnotherCustomInput>
     <p>{{ currentUser }}</p>
-    <button @click="() => {userList.addUser(currentUser); console.log(currentUser.toString())}">Add user</button>
+    <button @click="() => {userList.addUser(currentUser); console.log('added user: ', currentUser.toString())}">Add
+      user
+    </button>
   </div>
 </template>
 

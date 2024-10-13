@@ -8,6 +8,7 @@ export class UserListModel {
         user = this.convertToObject(user)
         user.id = this.idCounter
         user.phoneNumber = user.phoneNumber ?? 0
+        user.age = user.age ?? 0
         this.userModels.push(user)
         this.idCounter++
     }
