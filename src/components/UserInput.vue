@@ -10,7 +10,7 @@ const userList: UserListModel = inject("userList")
 </script>
 
 <template>
-  <div>
+  <div class="inline-flex flex-col gap-4">
     <AnotherCustomInput v-model:attribute="currentUser.name" type="text">Name</AnotherCustomInput>
     <AnotherCustomInput v-model:attribute="currentUser.email" type="text">Email</AnotherCustomInput>
     <AnotherCustomInput v-model:attribute="currentUser.phoneNumber as number" type="number">Phone number
@@ -24,9 +24,5 @@ const userList: UserListModel = inject("userList")
 </template>
 
 <style scoped>
-div {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+
 </style>

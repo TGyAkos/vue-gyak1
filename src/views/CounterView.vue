@@ -14,8 +14,8 @@ const switchColor = () => {
 </script>
 
 <template>
-  <main :class="{'bg-white text-black': lightMode}">
-    <div class="buttons">
+  <main :class="{'bg-white text-black': lightMode}" class="inline-flex flex-col justify-start items-start">
+    <div class="inline-flex flex-col justify-start items-start">
       <button @click="switchColor">Switch color</button>
       <button @click="counterCounter++">Add counter</button>
       <button @click="counterCounter = 0">Remove all</button>
@@ -27,10 +27,5 @@ const switchColor = () => {
 </template>
 
 <style scoped>
-.buttons {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: flex-start;
-}
+
 </style>
